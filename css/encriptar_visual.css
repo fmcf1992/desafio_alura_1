@@ -1,21 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario:#fff; /* COLOR DE LETRAS QUE RESALTA*/
+    --color-enlace_correo: #d4df9a;
+
+    --fuente-motserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    font-size: 16px;
+}
+* {
+    padding: 0;
+    margin:2%;
+    background-color: var(--color-primario);
+}
 
 .principal{
     display: flex;
-    
     width: 100%;
+
     
 }
 .principal__1{
-    width: 100%;
+    width: 680px;
+    height: 288px;
+
+
 }
-.input_ingresado{
-    width:80%;
-    height: 80%;
+.principal__2{
+    width: 400px;
+    height: 944px;
+}
+.input__ingresado{
+    width:100%;
+    height: 500px;
+    border: solid 1px var(--color-terciario);
 }
 
+.div__exclamacion{
+
+}
+
+.div__botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boton__encriptar{
+    width: 328px;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    height: 50px;
+    border-radius: 5px;
+    border: solid 2px var(--color-secundario);
+}
+
+.boton__desencriptar{
+    width: 328px;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    height: 50px;
+    border-radius: 5px;
+    border: solid 2px var(--color-secundario);
+}
 .imagen__exclamacion{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
 }
 .div__exclamacion{
     display: flex;
@@ -23,6 +74,6 @@
 }
 
 .imagen__lupa{
-    width: 100%;
+    width: 90%;
 
 }

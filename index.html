@@ -10,26 +10,29 @@
 <body>
     <header></header>
     <main class="principal">
-        <section class="principal_1">
-            <div>
-                <input type="text" id="input_ingresado" class="texto__encriptar"name="fname">
+        <section class="principal__1">
+            <div class="principal__1__input">
+                <input type="text" id="" class="input__ingresado"name="fname">
                 <div class="div__exclamacion">
                     <img class="imagen__exclamacion" src="./imagenes/peligro.png">
                     <p class="texto__exclamacion">Se aceptan letras minusculas y sin acento</p>
                 </div>
             </div>
-            <div>
+            <div class="principal__1__botones">
                 <div class="div__botones">
                     <button onclick="encriptar();" class="boton__encriptar">Encriptar</button>
                     <button onclick="desencriptar();" class="boton__desencriptar">Desencriptar</button>
                 </div>
             </div>
         </section>
-        <section class="principal_2">
-            <div>
+        <section class="principal__2">
+            <div class="principal__2__inicial">
                 <img class="imagen__lupa" src="./imagenes/lupa_principal.png">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>         
+            </div>
+            <div class="principal__2__resultado">
                 <p id="texto_resultado" class="texto__desencriptar"></p>
-                
             </div>
         </section>
     </main>
