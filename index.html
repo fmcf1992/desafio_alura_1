@@ -2,10 +2,37 @@
 <html lang="es-mx">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/encriptar_visual.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptar</title>
+
 </head>
 <body>
-    
+    <header></header>
+    <main class="principal">
+        <section class="principal_1">
+            <div>
+                <input type="text" id="input_ingresado" class="texto__encriptar"name="fname">
+                <div class="div__exclamacion">
+                    <img class="imagen__exclamacion" src="./imagenes/peligro.png">
+                    <p class="texto__exclamacion">Se aceptan letras minusculas y sin acento</p>
+                </div>
+            </div>
+            <div>
+                <div class="div__botones">
+                    <button onclick="encriptar();" class="boton__encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="boton__desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="principal_2">
+            <div>
+                <img class="imagen__lupa" src="./imagenes/lupa_principal.png">
+                <p id="texto_resultado" class="texto__desencriptar"></p>
+                
+            </div>
+        </section>
+    </main>
+    <footer></footer>    
 </body>
 </html>
