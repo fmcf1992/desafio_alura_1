@@ -18,7 +18,7 @@
     <main class="div__principal">
         <section class="principal__1">
             <div class="principal__1__input">
-                <textarea id="input__ingresado__id" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="input__ingresado__id" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui" oninput="ingresandoPalabras(this)"></textarea>
             </div>
             <div class="principal__1__botones">
                 <div class="div__exclamacion">
@@ -40,9 +40,10 @@
   
             </div>
             <div id="div__resultado"class="principal__2__resultado">
+                <h2 class="titulo__resultado">Resultado</h2>
                 <p id="texto_resultado" class="texto__desencriptar"></p>
                 <div class="div__boton__copiar">
-                    <button onclick="copiar();" class="boton__copiar">Copiar</button>
+                    <button onclick="copiarResultado();" class="boton__copiar">Copiar</button>
                 </div>
                 
             </div>
