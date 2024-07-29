@@ -18,7 +18,7 @@
     <main class="div__principal">
         <section class="principal__1">
             <div class="principal__1__input">
-                <textarea id="" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas</textarea>
+                <textarea id="input__ingresado__id" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui"></textarea>
             </div>
             <div class="principal__1__botones">
                 <div class="div__exclamacion">
@@ -32,15 +32,15 @@
             </div>
         </section>
         <section class="principal__2">
-            <div class="principal__2__inicial">
+            <div id="div__imagen" class="principal__2__inicial">
                 <img class="imagen__lupa" src="./imagenes/lupa_principal.png">
                 <p class="lupa__negrita">Ningún mensaje fue encontrado</p>
 
                 <p class="lupa__sin__negrita">Ingresa el texto que desees encriptar o desencriptar.</p> 
   
             </div>
-            <div id="principal__2__resultado"class="principal__2__resultado">
-                <p id="texto_resultado" class="texto__desencriptar">este es mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje este es mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptado  mensaje encriptadoencriptado</p>
+            <div id="div__resultado"class="principal__2__resultado">
+                <p id="texto_resultado" class="texto__desencriptar"></p>
                 <div class="div__boton__copiar">
                     <button onclick="copiar();" class="boton__copiar">Copiar</button>
                 </div>
@@ -56,6 +56,6 @@
             </p>
         </div>
     </footer>    
-    <script src="funciones.js"></script>
+    <script src="funciones.js" defer ></script>
 </body>
 </html>
