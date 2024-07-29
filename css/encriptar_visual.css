@@ -16,7 +16,7 @@
 
 }
 body{
-    padding: 20px 50px;
+    padding: 20px 80px;
     background-color: var(--color-primario);
 
     
@@ -31,6 +31,7 @@ body{
 }
 
 .div_alura{
+    margin: 20px;
     width: 120px;
     height: 48px;
 }
@@ -49,68 +50,72 @@ body{
 .div__principal{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    height: 800px;
-    padding: 50px 100px;
-    margin: 20px;
-    border: solid 1px red;
+    width: 95%;
+    height: 890px;
 
-    
+    margin: 10px;
+
+ 
 }
 
 
 .principal__1{
-    width:100%;
-    height: 100%;
-
+    width:70%;
+    height:100%;
     display: flex;
-
     flex-direction: column;
     justify-content: space-between;
-    border: solid 1px red;
+    margin-left: 200px;    
 
 }
 
 .principal__2{
 
     display: flex;
-    padding: 2.5%;
+    padding: 2.0%;
     flex-direction: column;
-    align-items: center;
-
+    justify-content: center;
     width: 350px;
     background-color: var(--color-terciario);
     border-radius: 32px;
-    border: solid 1px red;
+ 
+    box-shadow: 5px 5px 12px 5px rgba(20, 20, 20, 0.3);
+
+
 
 }
 
 
 /* principal 1 - lado izquierdo */
-.input__ingresado{
-    width:90%;
-    height: 700px;
-    border: solid 1px var(--color-terciario);
-    color: var(--color-secundario);
-    font-size: 32px;
-    line-height: 150%;
-}
-.input__ingresado::placeholder{
-
-    font-weight: 800;
-    font-size: 32;
-    color: var(--color-secundario);
-}
-
-.principal__1__input{
-    
-}
 
 .div__exclamacion{
     display: flex;
     padding-top: 10px;
 
 }
+.input__ingresado{
+    width:90%;
+    height: 380px;
+    border: none;
+    color: var(--color-secundario);
+    font-size: 32px;
+    line-height: 150%;
+    resize: none;
+    background-color: var(--color-primario);
+}
+.input__ingresado::placeholder{
+
+    font-weight: 800;
+    font-size: 32;
+    color: var(--color-secundario);
+    opacity: 1;
+
+}
+
+.principal__1__input{
+    padding-top: 90px;
+}
+
 
 .imagen__exclamacion{
 
@@ -120,6 +125,10 @@ body{
     size: 12px;
     color: #495057;
     font-weight: 200;
+    padding-bottom: 20px;
+}
+.principal__1__botones{
+    margin-bottom: 50px;
 }
 
 .div__botones{
@@ -157,7 +166,12 @@ body{
 
 /* principal 2 - lado derecho*/
 
-
+.principal__2__inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .imagen__lupa{
     background-color: var(--color-terciario);
     max-width: 336px;
@@ -172,23 +186,25 @@ body{
     font-family: var(--fuente-inter);
     justify-content: center;
     font-weight: 800;
-    size: 24px;
-    max-width: 336px;
+    padding: 10px;
+    font-size: 24px;
+    width: 330px;
     max-height: 48px;
     background-color: var(--color-terciario);
-    border: none;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .lupa__sin__negrita{
-    margin-top: 16px;
+
     display: flex;
     font-family: var(--fuente-inter);
     justify-content: center;
-    font-weight: 300;
-    size: 24px;
-    max-width: 336px;
-    max-height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    color:#495057;
     background-color: var(--color-terciario);
-    border: none;
+    text-align: center;
+
 }
 .principal__2__resultado{
 
