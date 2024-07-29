@@ -88,11 +88,7 @@ body{
 
 /* principal 1 - lado izquierdo */
 
-.div__exclamacion{
-    display: flex;
-    padding-top: 10px;
 
-}
 .input__ingresado{
     width:90%;
     height: 380px;
@@ -114,18 +110,31 @@ body{
 
 .principal__1__input{
     padding-top: 90px;
+
 }
 
+.div__exclamacion{
+    display: flex;
+}
 
-.imagen__exclamacion{
+.p_exclamacion{
+    border-radius: 45px;
+    color: var(--color-terciario);
+    background-color: #495057;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 10px;
 
 }
 .texto__exclamacion{
     font-family: var(--fuente-inter);
-    size: 12px;
+    font-size: 12px;
     color: #495057;
     font-weight: 200;
-    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 2px;
+
 }
 .principal__1__botones{
     margin-bottom: 50px;
@@ -135,23 +144,26 @@ body{
     width: 90%;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+
 }
 
 .boton__encriptar{
     width: 328px;
     background-color: var(--color-secundario);
     color: var(--color-terciario);
-    height: 50px;
+    height: 67px;
     border-radius: 24px;
     border: solid 2px var(--color-secundario);
     font-weight: 800;
+    margin-right: 20px;
 }
 
 .boton__desencriptar{
     width: 328px;
     background-color: var(--color-cuarto);
     color: var(--color-secundario);
-    height: 50px;
+    height: 67px;
     border-radius: 24px;
     border: solid 2px var(--color-secundario);
     font-weight: 800;
@@ -171,6 +183,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .imagen__lupa{
     background-color: var(--color-terciario);
@@ -207,7 +220,7 @@ body{
 
 }
 .principal__2__resultado{
-
+    display: none;
 }
 .texto__desencriptar{
     font-size: 24px;
@@ -224,4 +237,20 @@ body{
     border-radius: 24px;
     border: solid 2px var(--color-secundario);
     font-weight: 800;
+}
+
+
+
+/* footer */
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__enlace{
+
+    list-style: none;
+    color: var(--color-secundario);
+    text-align: center;
 }
