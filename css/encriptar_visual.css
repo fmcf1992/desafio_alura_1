@@ -81,8 +81,6 @@ body{
  
     box-shadow: 5px 5px 12px 5px rgba(20, 20, 20, 0.3);
 
-
-
 }
 
 
@@ -98,6 +96,7 @@ body{
     line-height: 150%;
     resize: none;
     background-color: var(--color-primario);
+    outline:none;  /* eliminar el marco al hacer click en el input */
 }
 .input__ingresado::placeholder{
 
@@ -105,7 +104,6 @@ body{
     font-size: 32;
     color: var(--color-secundario);
     opacity: 1;
-
 }
 
 .principal__1__input{
@@ -190,8 +188,6 @@ body{
     max-width: 336px;
     max-height: 304px;
     margin-bottom: 16px;
-
-
 }
 
 .lupa__negrita{
@@ -225,6 +221,9 @@ body{
 .texto__desencriptar{
     font-size: 24px;
     line-height: 150%;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    color:#495057
 }
 .div__boton__copiar{
 
@@ -244,13 +243,190 @@ body{
 /* footer */
 .footer{
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .footer__enlace{
 
-    list-style: none;
+    text-decoration: none;
     color: var(--color-secundario);
     text-align: center;
+}
+.footer__corazon{
+    color: red;
+}
+
+@media screen and (min-width:500px) and (max-width:1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        padding: 0px 0px;
+        background-color: var(--color-primario);
+
+        width: 100%;
+        height: 100%;
+
+
+
+    }
+    .div_alura{
+        margin-bottom: 50px;
+
+    }
+    
+    .div__principal{
+        flex-direction: column;
+        width:93%;
+
+
+        height: 100%;
+
+    }
+    .principal__1{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+
+ 
+    }
+    .principal__1__input{
+        padding: 0;
+    }
+    .input__ingresado{
+        width:100%;
+
+    }
+    .principal__1__botones{
+        width: 100%;
+        
+    }
+    .div__botones{
+        width: 100%;
+    }
+
+    .principal__2__inicial{
+        display: none;
+    }
+    .imagen__lupa{
+        display: none; /*oculta la imagen*/
+    }
+
+    .principal__2__resultado{
+        display: block;
+    }
+
+    .principal__2{
+
+        padding: 5%;
+        margin: 0%;
+        width: 90%;
+        height: 100%;
+
+    
+    }
+    .texto__desencriptar{
+        padding-bottom: 2%;
+        
+    }
+    .boton__copiar{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        padding: 0px 0px;
+        background-color: var(--color-primario);
+
+        width: 100%;
+        height: 100%;
+
+
+
+    }
+    .div_alura{
+        margin-bottom: 30px;
+
+    }
+    
+    .div__principal{
+        flex-direction: column;
+        width:93%;
+
+
+        height: 100%;
+
+    }
+    .principal__1{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+
+ 
+    }
+    .principal__1__input{
+        padding: 0;
+    }
+    .input__ingresado{
+        width:100%;
+
+    }
+    .principal__1__botones{
+        width: 100%;
+        
+    }
+    .div__botones{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+    .boton__encriptar, .boton__desencriptar{
+        width: 100%;
+        font-weight: 800;
+        margin-right: 0;
+        margin-bottom: 24px;
+
+    }
+
+
+
+    .principal__2__inicial{
+        display: none;
+    }
+    .imagen__lupa{
+        display: none; /*oculta la imagen*/
+    }
+
+    .principal__2__resultado{
+        display: block;
+    }
+
+    .principal__2{
+
+        padding: 5%;
+        margin: 0%;
+        width: 90%;
+        height: 100%;
+
+    
+    }
+    .texto__desencriptar{
+        padding-bottom: 2%;
+        
+    }
+    .boton__copiar{
+        width: 100%;
+    }
 }
