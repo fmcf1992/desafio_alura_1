@@ -8,11 +8,17 @@
 
 </head>
 <body>
-    <header></header>
-    <main class="principal">
+    <header class="div__cabecera">
+        <div class="div_alura">
+            <a class="div__alura__enlace">
+                <img class="div__alura__enlace__logo" src="./imagenes/logo_alura.png" alt="alura">
+            </a>
+        </div>
+    </header>
+    <main class="div__principal">
         <section class="principal__1">
             <div class="principal__1__input">
-                <input type="text" id="" class="input__ingresado"name="fname">
+                <textarea id="" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="div__exclamacion">
                     <img class="imagen__exclamacion" src="./imagenes/peligro.png">
                     <p class="texto__exclamacion">Se aceptan letras minusculas y sin acento</p>
@@ -28,11 +34,18 @@
         <section class="principal__2">
             <div class="principal__2__inicial">
                 <img class="imagen__lupa" src="./imagenes/lupa_principal.png">
-                <p>Ningún mensaje fue encontrado</p>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>         
+                <p class="lupa__negrita">Ningún mensaje fue</p>
+                <p class="lupa__negrita">encontrado</p>
+                <p class="lupa__sin__negrita">Ingresa el texto que desees encriptar o desencriptar.</p>         
             </div>
             <div class="principal__2__resultado">
-                <p id="texto_resultado" class="texto__desencriptar"></p>
+
+                    <p id="texto_resultado" class="texto__desencriptar"></p>
+
+                <div class="div__boton__copiar">
+                    <button onclick="copiar();" class="boton__copiar">Copiar</button>
+                </div>
+                
             </div>
         </section>
     </main>
