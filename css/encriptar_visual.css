@@ -202,15 +202,18 @@ body{
 }
 
 .texto__desencriptar{
-    font-size: 24px;
-    line-height: 150%;
+    font-size: 18px;
+
     font-family: var(--fuente-inter);
     font-weight: 400;
     color:#495057;
-    text-align: justify;
+
+
+    height: 85%;
+    overflow: hidden; /* Oculta el contenido que se desborda */
     word-break: break-word; 
-    height: 80%;;
-}
+    line-height: 150%;
+    }
 
 .boton__copiar{
     width: 328px;
