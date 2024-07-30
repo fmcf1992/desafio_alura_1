@@ -18,7 +18,7 @@
     <main class="div__principal">
         <section class="principal__1">
             <div class="principal__1__input">
-                <textarea id="input__ingresado__id" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui" oninput="ingresandoPalabras(this)"></textarea>
+                <textarea id="input__ingresado__id" class="input__ingresado" rows="4" placeholder="Ingrese el texto aqui..." oninput="ingresandoPalabras(this)"></textarea>
             </div>
             <div class="principal__1__botones">
                 <div class="div__exclamacion">
@@ -40,7 +40,7 @@
   
             </div>
             <div id="div__resultado"class="principal__2__resultado">
-                <h2 class="titulo__resultado">Resultado</h2>
+                <h2 id="titulo__resultado" class="titulo__resultado">Resultado</h2>
                 <p id="texto_resultado" class="texto__desencriptar"></p>
                 <div class="div__boton__copiar">
                     <button onclick="copiarResultado();" class="boton__copiar">Copiar</button>
@@ -54,9 +54,10 @@
             <p class="footer__texto">Hecho con 
                 <strong class="footer__corazon">♥</strong> por
                 <strong><a class="footer__enlace" href="https://tinyurl.com/2nj2k39t">Francis Castro</a></strong>
+                - 2024
             </p>
         </div>
     </footer>    
-    <script src="funciones.js" defer ></script>
+    <script src="./func/funciones.js" defer ></script>
 </body>
 </html>

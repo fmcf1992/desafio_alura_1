@@ -41,8 +41,11 @@ function encriptar() {
         desactivar_div_imagen_lupa();
         activar_resultado();
         document.getElementById('texto_resultado').textContent = encryptedText;
+        document.getElementById('titulo__resultado').textContent = "Texto encriptado:";
+        let mensaje = document.getElementById('titulo__resultado');
+        mensaje.style.color = 'green';
     }else{
-        alert('Ingresar texto a encriptar');
+        alert("Debe ingresar un texto");
     }
 };
 
@@ -58,8 +61,11 @@ function desencriptar() {
             desactivar_div_imagen_lupa();
             activar_resultado();
         document.getElementById('texto_resultado').textContent = remplazando;
+        document.getElementById('titulo__resultado').textContent = "Texto desencriptado:";
+        let mensaje = document.getElementById('titulo__resultado');
+        mensaje.style.color = 'green';
     }else{
-        alert('Ingresar texto a desencriptar');
+        alert("Debe ingresar un texto");
     }  
 };
 

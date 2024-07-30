@@ -300,17 +300,14 @@ body{
     }
 
     .principal__2{
-
         padding: 5%;
         margin: 0%;
         width: 90%;
         height: 100%;
-
-    
     }
     .texto__desencriptar{
-        padding-bottom: 2%;
-        
+        padding-bottom: 4%;
+        padding-top: 4%;
     }
     .boton__copiar{
         width: 100%;
